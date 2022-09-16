@@ -1,10 +1,7 @@
 import torch
 from torch import Tensor
 
-from pl_bolts.utils.stability import under_review
 
-
-@under_review()
 def iou(preds: Tensor, target: Tensor) -> Tensor:
     """Calculates the intersection over union.
 
@@ -37,7 +34,6 @@ def iou(preds: Tensor, target: Tensor) -> Tensor:
     return iou
 
 
-@under_review()
 def giou(preds: Tensor, target: Tensor) -> Tensor:
     """Calculates the generalized intersection over union.
 
